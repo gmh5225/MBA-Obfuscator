@@ -42,18 +42,18 @@ class PolyMBAGenerator():
             traceback.print_stack()
             sys.exit(0)
         if not MBAfile1:
-            self.MBAfile1 = "../dataset/lMBA_{vnumber}variable.dataset.sorted.txt".format(vnumber=vnumber1)
+            self.MBAfile1 = "E:/MBA/MBA-Obfuscator/mba_obfuscator/dataset/lMBA_{vnumber}variable.dataset.sorted.txt".format(vnumber=vnumber1)
         else:
             self.MBAfile1 = MBAfile1
         self.MBAList1 = self.get_MBA(self.MBAfile1)
         if not MBAfile2:
-            self.MBAfile2 = "../dataset/lMBA_{vnumber}variable.dataset.sorted.txt".format(vnumber=vnumber2)
+            self.MBAfile2 = "E:/MBA/MBA-Obfuscator/mba_obfuscator/dataset/lMBA_{vnumber}variable.dataset.sorted.txt".format(vnumber=vnumber2)
             #self.MBAfile2 = r"pMBA_{vnumber}*{vnumber}variable.dataset.sorted.txt".format(vnumber=vnumber2)
         else:
             self.MBAfile2 = MBAfile2
         self.MBAList2 = self.get_MBA(self.MBAfile2)
         if not MBAdesfile:
-            self.MBAdesfile = "../dataset/pMBA_{vnumber1}_{vnumber2}variable.dataset.txt".format(vnumber1=self.vnumber1, vnumber2=self.vnumber2)
+            self.MBAdesfile = "E:/MBA/MBA-Obfuscator/mba_obfuscator/dataset/pMBA_{vnumber1}_{vnumber2}variable.dataset.txt".format(vnumber1=self.vnumber1, vnumber2=self.vnumber2)
         else:
             self.MBAdesfile = MBAdesfile
         
